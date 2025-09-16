@@ -1,5 +1,13 @@
 # To-Do List Application
 
+---
+
+## 📝 GitHub Link
+
+https://github.com/ashreekar/ToDoListReact
+
+---
+
 ## 📌 Overview
 
 This is a simple **To-Do List application** built using **React (Vite)**.
@@ -92,10 +100,3 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 ✔️ Event handling (Add, Edit, Delete, Complete)
 ✔️ Styled for better user experience
 ✔️ README with setup instructions
-
----
-
-## 📝 Submission Notes
-
-* Ensure you **remove `node_modules/`** before uploading.
-* Push your project to GitHub with at least **5 relevant commits**.
