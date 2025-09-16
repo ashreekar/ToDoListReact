@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer className="w-full bg-[#f8f9fa] text-black py-8 px-6 mt-6 border-t-2">
-      {/* Social Links */}
+      {/* Social Links for my account*/}
       <section className="flex flex-col items-center gap-3">
         <h3 className="text-lg font-semibold">Follow Me</h3>
         <ul className="flex gap-6">
@@ -38,7 +38,7 @@ function Footer() {
         </ul>
       </section>
 
-      {/* Disclaimer */}
+      {/* Disclaimer and about */}
       <div className="mt-6 text-center text-xs text-gray-400">
         <p>
           Designed & built by <span className="font-semibold">Ashreek A R</span>
