@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import Header from './components/Header'
 import ToDoList from './components/ToDoList'
+import Footer from './components/footer'
 
 function App() {
 
@@ -48,9 +49,10 @@ function App() {
   }
 
   return (
-    <div className='flex flex-col items-center absolute inset-0 bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]'>
+    <div className='flex flex-col items-center min-h-screen bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]'>
       <Header addTodo={addTodo} todoUpdate={todoUpdate} todo={todo} />
       <ToDoList todos={todos} ontoggle={ontoggle} onDelete={onDelete} onUpdate={onUpdate} />
+      <Footer/>
     </div>
   )
 }
