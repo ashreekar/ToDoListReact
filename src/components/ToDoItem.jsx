@@ -19,13 +19,22 @@ function TodDoItem(props) {
         <article className="flex rounded-md bg-amber-600 hover:bg-amber-700 w-[90%] h-14 p-2 justify-between items-center font-extrabold text-white">
             <div className="flex gap-2 font-medium">
             
-                    <input type="checkbox" id="_checkbox-26" name="complete" checked={props.item.isCompleted} onChange={toggleComplete} className="h-8 w-8 rounded-full border-gray-900/20 bg-gray-900/10 transition-all hover:scale-105 hover:before:opacity-0" />
-                    
+                      <button 
+                    onClick={toggleComplete} 
+                    className="cursor-pointer hover:scale-110 transition-transform"
+                    title={props.item.isCompleted ? "Mark as incomplete" : "Mark as complete"}
+                >
+                    {props.item.isCompleted ? (
+                        <FaCheckCircle size={22} />
+                    ) : (
+                        <FaTimesCircle size={22} />
+                    )}
+                </button>
                 <p className={props.item.isCompleted ? "line-through" : ""}>{props.item.todo}</p>
             </div>
             <div className="flex gap-4">
-                <button onClick={onDelete} className="cursor-pointer hover:scale-90"><FaTrash size={18} /></button>
-                <button onClick={onUpdate} className="cursor-pointer hover:scale-90"><FaEdit size={18} /></button>
+                <button onClick={onDelete} className="cursor-pointer hover:scale-90" title="delete"><FaTrash size={18} /></button>
+                <button onClick={onUpdate} className="cursor-pointer hover:scale-90" title="update"><FaEdit size={18} /></button>
             </div>
         </article>
     )
