@@ -12,7 +12,7 @@ function Header({ addTodo, todoUpdate, todo }) {
     }
 
     return (
-        <header className="cover flex flex-col items-center justify-center min-h-30 gap-2 mt-2 rounded-lg border-2 border-black bg-amber-300 w-[50vw]">
+        <header className="cover flex flex-col items-center justify-center min-h-30 gap-2 mt-2 rounded-lg border-2 border-black bg-amber-300 w-[90%] md:w-[50vw] p-2">
             <h1 className="text-3xl text-white font-extrabold text-center">ToDo<span className="text-black"> List</span></h1>
 
             <div className="addfields w-full max-w-sm min-w-[200px]">
